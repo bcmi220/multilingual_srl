@@ -24,7 +24,6 @@ class Vertex:
         self.head = int(head)
         self.children = []
 
-
 def build_tree(conll_data):
     trees = []
     for sent in conll_data:
@@ -102,8 +101,6 @@ def get_available_list_by_k_son(sentence, k_son_list, current_idx):
 			break 
 	
 	return reserve_set
-
-
 
 def srl2ptb(origin_data, syntax_rule, k_pruning, force_mask, unified):
 	trees = build_tree(origin_data)
@@ -188,7 +185,6 @@ def srl2ptb(origin_data, syntax_rule, k_pruning, force_mask, unified):
 	if unified:
 		print('disamb set size:', len(list(disamb_set)))
 	return srl_data
-
 
 def save(srl_data, path):
 	with open(path,'w') as f:
