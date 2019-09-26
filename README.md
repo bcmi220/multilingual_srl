@@ -20,6 +20,6 @@ python preprocess-conll09.py --train ./datasets/conll09-english/conll09_train.da
 
 ## 3. Model training and evaluation
 ```
-python train.py --config_file ./configs/config.fasttext.hitelmo.japanese.cfg --dynet-gpu
+python run/train.py --config_file ./configs/config.fasttext.hitelmo.japanese.cfg --dynet-gpu
 ```
 
